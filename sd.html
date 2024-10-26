@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shabnam's Delicacy Order Form</title>
+</head>
+<body style="background-color: pink; font-family: Arial, sans-serif;">
+    <div style="max-width: 450px; margin: auto; background-color: lavenderblush; border-radius: 10px; padding: 20px; box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);">
+        <h1 style="color: hotpink; text-align: center;">Shabnam's Delicacy</h1>
+        <p style="color: mediumvioletred; text-align: center;">Order your favorite bakery items here!</p>
+        <form id="orderForm">
+            <!-- Customer Information -->
+            <label for="name" style="color: darkviolet;">Name:</label><br>
+            <input type="text" id="name" name="name" required style="width: 90%; padding: 8px; border: 1px solid lavender; border-radius: 5px; margin-bottom: 12px;"><br>
+
+            <label for="contactNumber" style="color: darkviolet;">Contact Number:</label><br>
+            <input type="tel" id="contactNumber" name="contactNumber" required style="width: 90%; padding: 8px; border: 1px solid lavender; border-radius: 5px; margin-bottom: 12px;"><br>
+
+            <label for="email" style="color: darkviolet;">Email:</label><br>
+            <input type="email" id="email" name="email" required style="width: 90%; padding: 8px; border: 1px solid lavender; border-radius: 5px; margin-bottom: 12px;"><br>
+
+            <!-- Delivery Date and Time -->
+            <label for="deliveryDate" style="color: darkviolet;">Preferred Delivery Date:</label><br>
+            <input type="date" id="deliveryDate" name="deliveryDate" required style="width: 90%; padding: 8px; border: 1px solid lavender; border-radius: 5px; margin-bottom: 12px;"><br>
+
+            <label for="deliveryTime" style="color: darkviolet;">Preferred Delivery Time:</label><br>
+            <input type="time" id="deliveryTime" name="deliveryTime" required style="width: 90%; padding: 8px; border: 1px solid lavender; border-radius: 5px; margin-bottom: 12px;"><br>
+
+            <!-- Address and Order Details -->
+            <label for="deliveryAddress" style="color: darkviolet;">Delivery Address:</label><br>
+            <input type="text" id="deliveryAddress" name="deliveryAddress" required placeholder="e.g., Mog Bazar, Dhaka" style="width: 90%; padding: 8px; border: 1px solid lavender; border-radius: 5px; margin-bottom: 12px;"><br>
+
+            <!-- Loyalty Discount -->
+            <label for="discountCode" style="color: darkviolet;">Discount Code:</label><br>
+            <input type="text" id="discountCode" name="discountCode" placeholder="Enter code if any" style="width: 90%; padding: 8px; border: 1px solid lavender; border-radius: 5px; margin-bottom: 12px;"><br>
+
+            <label for="itemDescription" style="color: darkviolet;">Order Details (Item, color, toppings):</label><br>
+            <textarea id="itemDescription" name="itemDescription" placeholder="e.g., Vanilla cake with pink frosting" required style="width: 90%; padding: 8px; border: 1px solid lavender; border-radius: 5px; margin-bottom: 12px;"></textarea><br>
+
+            <label for="allergies" style="color: darkviolet;">Allergies:</label><br>
+            <input type="text" id="allergies" name="allergies" style="width: 90%; padding: 8px; border: 1px solid lavender; border-radius: 5px; margin-bottom: 12px;"><br>
+
+            <label for="photo" style="color: darkviolet;">Reference Photo (optional):</label><br>
+            <input type="file" id="photo" name="photo" accept="image/*" style="width: 90%; padding: 8px; border: 1px solid lavender; border-radius: 5px; margin-bottom: 12px;"><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Place Order" style="width: 90%; padding: 10px; background-color: hotpink; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 1.1em;">
+        </form>
+
+        <!-- Order Summary -->
+        <h2 style="color: darkviolet;">Order Summary</h2>
+        <div id="orderSummary" style="background-color: white; padding: 10px; border: 1px solid lavender; border-radius: 5px;">
+            <p id="summaryContent">Your order summary will appear here as you fill out the form.</p>
+        </div>
+    </div>
+
+    <script src="orderForm.js"></script>
+</body>
+</html>
